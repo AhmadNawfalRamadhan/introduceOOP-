@@ -30,5 +30,5 @@ int main()
     cout << "nama mobil = " << nazar.nama_mobil << endl;
     cout << "tipe mobil = " << nazar.tipe_mobil << endl;
     nazar.inputData();
-
+    
 }
