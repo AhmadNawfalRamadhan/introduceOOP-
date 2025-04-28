@@ -1,26 +1,34 @@
 # include <iostream>
 using namespace std;
 
-class mahasiswa{
+class Mobil{
     public:
-        int nim;
-        string nama;
-        float nilai;
+        string nama_mobil;
+        string tipe_mobil;
 
-        void printData(){
-            cout << "NIM = " << nim << endl;
-            cout << "Nama = " << nama << endl;
-            cout << "Nilai = " << nilai << endl;
-        }
+    private:
+    int harga_mobil;
+
+    public:
+    void inputData()
+    {
+        cout << "Masukkan nama mobil: ";
+        cin >> nama_mobil;
+        cout << "Masukkan tipe mobil: ";
+        cin >> tipe_mobil;
+        cout << "Masukkan harga mobil: ";
+        cin >> harga_mobil;
+    }
+    void outputData(){
+        cout << "Harga mobil = " << harga_mobil << endl;
+    }
 };
+int main()
+{
+    Mobil nazar;
+    nazar.inputData();
+    cout << "nama mobil = " << nazar.nama_mobil << endl;
+    cout << "tipe mobil = " << nazar.tipe_mobil << endl;
+    nazar.inputData();
 
-int main(){
-    mahasiswa mhs;
-
-    mhs.nim = 2024;
-    mhs.nama = "sule";
-    mhs.nilai = 75,5;
-
-    mhs.printData();
-    
 }
