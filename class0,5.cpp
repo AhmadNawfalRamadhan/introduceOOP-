@@ -19,3 +19,16 @@ class Mobil{
         cout << "Masukkan harga mobil: ";
         cin >> harga_mobil;
     }
+    void outputData(){
+        cout << "Harga mobil = " << harga_mobil << endl;
+    }
+};
+int main()
+{
+    Mobil nazar;
+    nazar.inputData();
+    cout << "nama mobil = " << nazar.nama_mobil << endl;
+    cout << "tipe mobil = " << nazar.tipe_mobil << endl;
+    nazar.inputData();
+    
+}
