@@ -13,3 +13,14 @@ class mahasiswa{
             cout << "Nilai = " << nilai << endl;
         }
 };
+
+int main(){
+    mahasiswa mhs;
+
+    mhs.nim = 2024;
+    mhs.nama = "sule";
+    mhs.nilai = 75,5;
+
+    mhs.printData();
+    
+}
