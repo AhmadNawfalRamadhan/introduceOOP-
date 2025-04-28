@@ -1,34 +1,21 @@
 # include <iostream>
 using namespace std;
 
-class persegipanjang{
+class Mobil{
+    public:
+        string nama_mobil;
+        string tipe_mobil;
+
     private:
-    string panjang;
-    string lebar;
-    int luas;
+    int harga_mobil;
 
     public:
-    void inputdata()
+    void inputData()
     {
-        cout << "Masukkan panjangnya = ";
-        cin >> panjang;
-        cout << "Masukkan lebarnya = ";
-        cin >> lebar;
+        cout << "Masukkan nama mobil: ";
+        cin >> nama_mobil;
+        cout << "Masukkan tipe mobil: ";
+        cin >> tipe_mobil;
+        cout << "Masukkan harga mobil: ";
+        cin >> harga_mobil;
     }
-    void outputdata()
-    {
-        cout << "luasnya = " << luas <<endl;
-    }
-    void hitungluas()
-    {
-        luas = panjang * lebar;
-    }
-};
-
-int main()
-{
-    persegipanjang pp;
-    pp.inputdata();
-    pp.hitungluas();
-    pp.outputdata();
-}
