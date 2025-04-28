@@ -25,3 +25,10 @@ class persegipanjang{
     }
 };
 
+int main()
+{
+    persegipanjang pp;
+    pp.inputdata();
+    pp.hitungluas();
+    pp.outputdata();
+}
